@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index,follow">	
+    <meta name="description" content="Conteudo inovador e dinâmico com muito entretenimento. Desde o seu lançamento,
+    temos expandido nossa presença nas principais redes sociais, como Instagram, Youtube e TikTok, trazendo conteúdo diversificado e de alta qualidade!">
+    <meta name="keyword" content="TalkShow, Diversão, Conteúdo, Rede social, Inovação">
+    <meta name="author" content=" Dérick campos santos, Derick, Dking">
+    <meta name="language" content="pt-BR">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="generator" content="Visual studio code">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"> <!-- Evitar cache -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta property="og:title" content="Gugu TalkShow">
+    <meta property="og:url" content="https://gugutalkshoww.vercel.app/">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <title>Gugu talkshow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Api do Vlibras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <!--Fim da API-->
+    <!--Botão up-->
+    <div class="scroll-up-btn">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </div>
+    <!--Fim Botão up-->
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Logo</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    
+    <!--Rodapé aqui-->
+    <footer class="footer-bottom py-3 text-center">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#portfolio">Sobre nós</a></li>
+                        <li><a href="#services">Nossos serviços</a></li>
+                        <li><a href="#contact">Fale conosco</a></li>
+                        <li><a href="https://wa.me/5511999832007?text=Trabalhe%20conosco">Trabalhe conosco</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos ajude</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/gugu.talk.show/">Nos siga</a></li>
+                        <li><a href="#contact">Feedback's</a></li>
+                        <li><a href="https://link.mercadopago.com.br/deckcs">faça uma doação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@gugu.talk.show"><ion-icon name="logo-tiktok"></ion-icon></a>
+                        <a href="https://www.youtube.com/@gts_brasil"><ion-icon name="logo-youtube"></ion-icon></ion-icon></a>
+                        <a href="https://wa.me/5511999832007?text=Fale%20conosco"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a href="https://www.instagram.com/gugu.talk.show/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+
+
+
+        <p class="copy">&copy; 2024  Gugu Talkshow <br>Todos os direitos reservados.<br><br><br>Desenvolvido por <a class="marketing" href="https://github.com/Derickcsantos/Derickcsantos">Derick Campos Santos</a></p>
+    </footer>
+    <!--Fim do rodapé aqui-->
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+         new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
