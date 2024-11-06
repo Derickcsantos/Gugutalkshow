@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Responsividade Cabeçalho*/
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #ccc;
+        color: #333;
+        top: 50px;
+        right: 0;
+        width: 80%;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Ajustes para seções em telas menores - Main */
+@media (max-width: 768px) {
+    main {
+        padding: 20px 10px;
+    }
+}

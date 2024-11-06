@@ -1,51 +1,32 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    //Função para o botão de scroll
+    const scrollUpBtn = document.getElementById('scrollUpBtn');
 
-
-    // jQuery para scroll e Owl Carousel
-    $(window).scroll(function() {
-        // Navbar-bottom scrolling
-        if (this.scrollY > 5) {
-            $('.navbar-bottom').addClass("sticky");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollUpBtn.classList.add('show');
         } else {
-            $('.navbar-bottom').removeClass("sticky");
+            scrollUpBtn.classList.remove('show');
         }
+    };
 
-        // Scrolling Button Btn
-        if (this.scrollY > 500) {
-            $('.scroll-up-btn').addClass("show");
-        } else {
-            $('.scroll-up-btn').removeClass("show");
-        }
+    scrollUpBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Faz a rolagem suave até o topo
+        });
     });
+    //-------------------------------//
 
-    // Slide up script
-    $('.scroll-up-btn').click(function() {
-        $('html').animate({ scrollTop: 0 });
-    });
+    //Função para o menu responsivo
+    const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
 
-    // Owl Carousel initialization
-    $('.owl-carousel').owlCarousel({
-        margin: 5,
-        navigation: true,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 9000, // Corrigido de autoplayTimeOut para autoplayTimeout
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 2,
-                nav: false
-            },
-            1000: {
-                items: 3,
-                nav: false
-            }
-        }
-    });
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    //--------------------------------//
+
+
 });
-

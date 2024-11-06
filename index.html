@@ -28,6 +28,9 @@
 
     <title>Gugu talkshow</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/responsividade.css">
 </head>
 <body>
     <!--Api do Vlibras-->
@@ -37,13 +40,15 @@
           <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
-    <!--Fim da API-->
-    <!--Botão up-->
-    <div class="scroll-up-btn">
-        <ion-icon name="arrow-up-outline"></ion-icon>
-    </div>
-    <!--Fim Botão up-->
+    <!---->
 
+    <!-- Botão para subir-->
+    <div class="scroll-up-btn" id="scrollUpBtn">
+        ↑
+    </div>
+    <!---->
+
+    <!--Cabeçalho-->
     <header>
         <nav class="navbar">
             <div class="logo">Logo</div>
@@ -55,14 +60,91 @@
             <ul class="nav-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Blog</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
+    <!---->
+
+    <!--Corpo da pagina-->
     <main>
 
+        <Section id="contact" class= "contact">
+            <div class="box">
+                <div class="contact form">
+                    <h3 style="text-align: center; margin-bottom: 30px;">Envie uma mensagem</h3>
+                    <form  action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="ca78178e-6d77-4544-8655-c0dfc8e80564">
+
+
+                        <div class="formBox">
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Nome</span>
+                                    <input type="text" name="name" placeholder="Seu nome" required>
+                                </div>
+                            </div>
+    
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Email </span>
+                                    <input type="email" placeholder="Digite aqui" required>
+                                </div>
+                            </div>
+    
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <span>Mensagem </span>
+                                    <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                                </div>
+                            </div>
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <input type="submit" value="Enviar">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="contact info">
+                <h3 class="h3_destaque">Informações de contato</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="time-outline"></ion-icon></span>
+                        <p>09 de Agosto de 2023</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="mailto:silvadeoliveira.gustavo35@gmail.com">silvadeoliveira.gustavo35@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:+55 11 986261007">+55 11 99983-2007</a>
+                    </div>
+        
+                    <!-- Redes Sociais aqui -->
+                    <ul class="sci">
+                        <li><a href="https://www.tiktok.com/@gugu.talk.show"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                        <li><a href="https://www.youtube.com/@gts_brasil"><ion-icon name="logo-youtube"></ion-icon></ion-icon></a></li>
+                        <li><a href="https://wa.me/5511999832007?text=Fale%20conosco"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/gugu.talk.show/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="doacao">
+                <h1>Nos ajude a crescer!</h1>
+                <p>Faça parte da construção dessa incrivel marca que tem proporcionado entreterimento à tantas pessoas. <br><br> Nos incentive!</p>
+                <button>
+                    <a href="https://link.mercadopago.com.br/deckcs">Faça uma doação</a>
+                </button>
+            </div>
+        </Section>
+
     </main>
+    <!---->
     
     <!--Rodapé aqui-->
     <footer class="footer-bottom py-3 text-center">
@@ -97,21 +179,12 @@
             </div>
         </div>
 
-
-
         <p class="copy">&copy; 2024  Gugu Talkshow <br>Todos os direitos reservados.<br><br><br>Desenvolvido por <a class="marketing" href="https://github.com/Derickcsantos/Derickcsantos">Derick Campos Santos</a></p>
     </footer>
-    <!--Fim do rodapé aqui-->
+    <!---->
 
-    <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navList = document.querySelector('.nav-list');
 
-        mobileMenu.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        });
-
-    </script>
+    <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>

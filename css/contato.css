@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* Estilo da seção de contato */
+#contact {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px; /* Padding ajustado */
+    max-width: 1200px; /* Largura máxima para centralizar */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Título da Seção */
+#contact .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha o conteúdo ao centro */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#contact .title h2 {
+    color: #4829f9;
+    font-weight: 500;
+}
+
+/* Destaque do Título */
+#contact .h3_destaque {
+    color: white;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+/* Layout de Contato */
+.contact {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo interno da .contact */
+}
+
+/* Layout da Box */
+.box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "form"
+        "info"
+        "map";
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilo do Formulário */
+.formBox {
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.inputBox {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.inputBox input,
+.inputBox textarea {
+    color: #000;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid rgb(66, 54, 54);
+    border-radius: 5px;
+}
+
+.formBox .row100 .inputBox {
+    width: 100%;
+}
+
+.inputBox span {
+    color: #4829f9;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Estilo do botão de envio */
+.inputBox input[type="submit"] {
+    background: #4829f9;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    max-width: 150px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.inputBox input[type="submit"]:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Placeholder */
+.inputBox::placeholder {
+    color: #999;
+}
+
+/* Informações de contato */
+.info {
+    background: #4829f9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.info h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info .infoBox div span {
+    min-width: 35px;
+    height: 40px;
+    color: #4829f9;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info .infoBox div p,
+.info .infoBox div a {
+    color: #fff;
+}
+
+.info .infoBox div a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Redes Sociais */
+.sci {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+
+/* Seção de Doação */
+.doacao {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.doacao h1 {
+    margin-bottom: 20px;
+}
+
+.doacao button {
+    background-color: #4829f9; /* Cor de fundo do botão */
+    border: none; /* Remove bordas padrão do botão */
+    padding: 0; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    height: 60px;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.doacao button:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o link dentro do botão */
+.doacao button a {
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Deixa o texto mais destacado */
+}
+
