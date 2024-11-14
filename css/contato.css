@@ -1,20 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-/* Estilo da seção de contato */
+/* Seção de Contato Principal */
 #contact {
     position: relative;
     width: 100%;
     padding: 40px 20px; /* Padding ajustado */
     max-width: 1200px; /* Largura máxima para centralizar */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    margin: 100px auto 0 auto; /* Centraliza horizontalmente */
+    z-index: -999;
 }
 
 /* Título da Seção */
@@ -42,11 +33,12 @@
 .contact {
     padding: 20px;
     background: #fff;
-    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
     border-radius: 5px;
+    /* Centraliza o conteúdo interno da .contact */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo interno da .contact */
+    align-items: center;
 }
 
 /* Layout da Box */
@@ -59,9 +51,9 @@
         "info"
         "map";
     gap: 20px;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 1000px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 /* Estilo do Formulário */
@@ -102,7 +94,6 @@
     font-weight: 500;
 }
 
-/* Estilo do botão de envio */
 .inputBox input[type="submit"] {
     background: #4829f9;
     color: #fff;
@@ -115,7 +106,7 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.inputBox input[type="submit"]:hover {
+.inputBox input[type="submit"]{
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -124,7 +115,7 @@
     color: #999;
 }
 
-/* Informações de contato */
+/* Info */
 .info {
     background: #4829f9;
     border-radius: 5px;
@@ -195,7 +186,6 @@
 .doacao h1 {
     margin-bottom: 20px;
 }
-
 .doacao button {
     background-color: #4829f9; /* Cor de fundo do botão */
     border: none; /* Remove bordas padrão do botão */
@@ -207,10 +197,6 @@
     margin-top: 20px;
 }
 
-.doacao button:hover {
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
 /* Estilos para o link dentro do botão */
 .doacao button a {
     color: #fff; /* Cor do texto do link */
@@ -218,3 +204,6 @@
     font-weight: bold; /* Deixa o texto mais destacado */
 }
 
+.doacao button:hover{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}

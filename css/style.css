@@ -1,25 +1,22 @@
-/* Resetando e normalizando as propriedades para todos os elementos */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins', sans-serif ;
     text-decoration: none;
     list-style: none;
+    text-align: center;
 }
-
-/* Estilização do cabeçalho da página */
-header {
-    position: fixed;
+/*Estilização do cabeçario da pagina*/
+header{
+    position: relative;
     top: 0;
     width: 100%;
     height: 50px;
     border-bottom: 1px solid #bebebe;
     background-color: #ccc;
-    z-index: 10; /* Garantir que o header fique sobre outros elementos */
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -27,18 +24,21 @@ header {
     background-color: #4829f9;
     color: #fff;
     padding: 10px 20px;
+    z-index: 999;
 }
 
 .logo {
+    color: white;
     font-size: 24px;
 }
 
 .nav-list {
+    list-style: none;
     display: flex;
 }
 
 .nav-list li {
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .nav-list a {
@@ -46,8 +46,6 @@ header {
     text-decoration: none;
 }
 
-
-/* Menu Toggle (para dispositivos móveis) */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -61,45 +59,40 @@ header {
     margin: 3px 0;
 }
 
-main {
-    padding: 80px 20px 20px; /* Ajustando o padding superior para compensar a altura do header fixo */
-    min-height: 100vh; /* Garante que o main ocupe pelo menos a altura da tela */
+/*Fim da estilização do cabeçario*/
+/*Inicio do corpo da pagina*/
+main{
+    height: 200vh;
     width: 100%;
-    box-sizing: border-box;
 }
 
-/* Adicionando estilos para as seções dentro do main */
-main > section {
-    margin-bottom: 40px; /* Espaçamento entre as seções */
+/*Botão para subir a pagina*/
+.btn{
+    display: inline-block;
+    padding: 15px 25px;
+    margin-right: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: all 0.5 ease;
 }
 
-/* Exemplo de um estilo básico para as seções dentro do main */
-main .section {
-    background-color: #fff; /* Cor de fundo para as seções */
-    padding: 20px;
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombras para dar destaque */
-}
-
-section h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Botão para subir a página */
-.scroll-up-btn {
+.scroll-up-btn{
     position: fixed;
     height: 45px;
     width: 42px;
     border: 3px solid #fff;
-    background: red;
-    right: 20px;
-    bottom: 20px;
+    background: #3019b1;
+    right: 30px;
+    bottom: 10px;
     text-align: center;
     line-height: 45px;
     color: #fff;
-    z-index: 1000;
+    z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
     cursor: pointer;
@@ -108,14 +101,116 @@ section h2 {
     transition: all 0.3s ease;
 }
 
-.scroll-up-btn.show {
+.scroll-up-btn.show{
     opacity: 1;
     pointer-events: auto;
+    bottom: 30px;
+}
+/*Fim do corpo da pagina*/
+/*Estilização do rodapé*/
+
+.footer-bottom {
+    background: #4829f9;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.scroll-up-btn:hover {
-    background-color: #3019b1; /* Muda a cor ao passar o mouse */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
+.footer-col {
+    width: 100%;
+    max-width: 300px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
 
+.footer-col h4 {
+    font-size: 18px;
+    color: #e6c611;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: -5px;
+    background-color: #fff;
+    height: 2px;
+    width: 50px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: color 0.3s ease, padding 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding: 8px;
+}
+
+.footer-col .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footer-col .social-links a {
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    background-color: #fff;
+    color: #4829f9;
+}
+
+.copy {
+    background-color: #4829f9;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.copy p {
+    margin: 0;
+}
