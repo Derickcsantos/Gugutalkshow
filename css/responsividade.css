@@ -158,3 +158,38 @@
         line-height: 35px;
     }
 }
+
+/* Responsividade para dispositivos pequenos (sobre) */
+@media (max-width: 599px) {
+    #sobre h2 {
+        font-size: 28px;
+    }
+
+    .sobre p {
+        font-size: 14px;
+        margin: 20px 10px;
+    }
+
+    .owl-carousel {
+        min-height: 200px;
+    }
+
+    .owl-carousel .item img {
+        width: 90%; /* Reduz tamanho das imagens em telas pequenas */
+    }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 600px) and (max-width: 999px) {
+    #sobre h2 {
+        font-size: 32px;
+    }
+
+    .sobre p {
+        font-size: 16px;
+    }
+
+    .owl-carousel .item img {
+        width: 95%;
+    }
+}

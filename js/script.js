@@ -25,27 +25,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Owl Carousel initialization
-    $('.owl-carousel').owlCarousel({
-        margin: 5,
-        navigation: true,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 9000, // Corrigido de autoplayTimeOut para autoplayTimeout
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 2,
-                nav: false
-            },
-            1000: {
-                items: 3,
-                nav: false
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 9000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true
+                }
             }
-        }
+        });
     });
-});
+    
+});    
 

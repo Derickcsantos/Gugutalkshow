@@ -1,0 +1,62 @@
+#sobre {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.sobre h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre h2 span {
+    font-weight: 500;
+    color: #ebaf0a;
+}
+
+.sobre p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.owl-carousel {
+    min-height: 300px;
+}
+
+.owl-carousel .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.owl-carousel .item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #e6c611;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #e6c611;
+}

@@ -84,6 +84,8 @@
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/responsividade.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/sobre.css">
 </head>
 <body>
     <!--Api do Vlibras-->
@@ -111,12 +113,32 @@
             <ul class="nav-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Blog</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Sobre Sessão -->
+        <section id="sobre" class="sobre">
+            <h2 class="text-center">Conheça <span class="text-secondary">um pouco sobre nós</span></h2>
+            <p class="text-center" style="margin: 20px 20px 70px 20px;">
+                A Gugu Talk Show foi lançada no dia 9 de agosto de 2023 por Gustavo Silva de Oliveira,
+                com o intuito de criar um espaço inovador e dinâmico para conversas e entretenimento. Desde o seu lançamento,
+                temos expandido nossa presença nas principais redes sociais, como Instagram e TikTok, trazendo conteúdo diversificado e de alta qualidade.
+            </p>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="img/principal.jpg" alt="Imagem Principal"></div>
+                <div class="item"><img src="img/Dupla.jpg" alt="Dupla"></div>
+                <div class="item"><img src="img/Trazeira.jpg" alt="Imagem Traseira"></div>
+                <div class="item"><img src="img/Frontal2.jpg" alt="Imagem Frontal 2"></div>
+                <div class="item"><img src="img/Fofos.jpg" alt="Imagem Fofa"></div>
+                <div class="item"><img src="img/Frontal.jpg" alt="Imagem Frontal"></div>
+            </div>
+        </section>
+
+
 
         <!--Sessão de blog-->
 		<section id="blog" class="blog py-3">
@@ -257,7 +279,7 @@
                     <h4>Company</h4>
                     <ul>
                         <li><a href="#portfolio">Sobre nós</a></li>
-                        <li><a href="#services">Nossos serviços</a></li>
+                        <li><a href="#Blog">Conheça nosso blog</a></li>
                         <li><a href="#contact">Fale conosco</a></li>
                         <li><a href="https://wa.me/5511999832007?text=Trabalhe%20conosco">Trabalhe conosco</a></li>
                         
@@ -297,9 +319,13 @@
         });
 
     </script>
+    <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <script>
          new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>

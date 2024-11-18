@@ -7,6 +7,18 @@
     list-style: none;
 }
 
+/* Garantir layout com Flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante entre o topo e o rodapé */
+    padding: 20px; /* Espaçamento interno no main */
+}
+
 /* Estilização do rodapé */
 .footer-bottom {
     background: #4829f9;
@@ -15,14 +27,12 @@
     font-weight: 300;
     padding: 40px 20px;
     text-align: center;
-    position: relative; /* Garante que o footer se posicione abaixo do conteúdo */
     width: 100%;
     margin-top: 20px; /* Espaçamento acima do rodapé */
 }
 
 .row-footer {
     display: flex;
-    position: relative;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
@@ -109,10 +119,15 @@
     color: #fff;
     padding: 10px;
     font-size: 14px;
-    position: relative;
     margin-top: 40px;
+    text-align: center;
 }
 
 .copy p {
     margin: 0;
+}
+
+.marketing {
+    color: #fff;
+    text-decoration: underline;
 }
