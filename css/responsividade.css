@@ -4,15 +4,19 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        background-color: #ccc;
+        background-color: #4829f9;
         color: #333;
         top: 50px;
-        right: 0;
+        right: -100%;
         width: 80%;
+        height: 100vh;
+        z-index: 10000;
+        transition: right 2s ease;
     }
 
     .nav-list.active {
         display: flex;
+        right: 0;
     }
 
     .menu-toggle {
