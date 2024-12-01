@@ -80,6 +80,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <title>Gugu talkshow</title>
+    <link rel="icon" href="img/logoBranca.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/blog.css">
@@ -104,7 +105,7 @@
 
     <header>
         <nav class="navbar">
-            <div class="logo">Logo</div>
+            <div class="logo">Gugu talkshow</div>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -306,7 +307,7 @@
 
 
 
-        <p class="copy">&copy; 2024  Gugu Talkshow <br>Todos os direitos reservados.<br><br><br>Desenvolvido por <a class="marketing" href="https://github.com/Derickcsantos/Derickcsantos">Derick Campos Santos</a></p>
+        <p class="copy">&copy; <span id="ano"></span>  Gugu Talkshow <br>Todos os direitos reservados.<br><br><br>Desenvolvido por <a class="marketing" href="https://github.com/Derickcsantos/Derickcsantos">Derick Campos Santos</a></p>
     </footer>
     <!--Fim do rodapé aqui-->
 
@@ -325,7 +326,10 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    <script>
+        const anoAtual = new Date().getFullYear();
+        document.getElementById('ano').textContent =  anoAtual;
+    </script>
     <script>
          new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
