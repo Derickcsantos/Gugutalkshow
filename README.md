@@ -1,6 +1,6 @@
 <div align="center">
 
-# Gugu Talk Show 🎙️
+# Gugu TalkShow 🎙️
 
 🌟 Uma plataforma interativa e inovadora para conectar pessoas por meio de ideias, conversas e conteúdo dinâmico! Com funcionalidades completas para criar, gerenciar e participar de discussões envolventes. 
 
