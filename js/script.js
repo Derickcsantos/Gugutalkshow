@@ -52,3 +52,23 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });    
 
+// Função para abrir o modal
+function openModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "flex";
+  }
+  
+  // Função para fechar o modal
+  function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none";
+  }
+  
+  // Fechar o modal clicando fora do conteúdo
+  window.addEventListener("click", (e) => {
+    const modal = document.getElementById("modal");
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+  
