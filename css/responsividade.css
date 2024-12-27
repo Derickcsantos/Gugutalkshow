@@ -1,1 +1,68 @@
 @media (max-width:768px){.nav-list{display:none;flex-direction:column;position:absolute;background-color:#4829f9;color:#333;top:50px;right:-100%;width:80%;height:100vh;z-index:10000;transition:right 2s ease}.nav-list.active{display:flex;right:0}.menu-toggle{display:flex}}@media (min-width:768px){#blog .wrapper .blog-card{flex-direction:row;flex-wrap:nowrap}#blog .wrapper .card{flex:1 1 30%}}@media (max-width:767px){#blog .wrapper .header h4{font-size:1.2em}#blog .wrapper .blog-info{flex-direction:column;align-items:center;text-align:center}#blog .wrapper .blog-info h2{font-size:1.5em}#blog .wrapper .blog-info a{margin-top:10px}#blog .wrapper .blog-card{flex-direction:column;align-items:center}#blog .wrapper .card{max-width:100%;margin:20px 0}}@media (max-width:991px){#contact{padding:20px}.box{grid-template-columns:1fr;grid-template-rows:auto auto auto;grid-template-areas:"form" "info" "map";gap:15px;max-width:100%;margin:0 auto}.contact{padding:20px}.inputBox{margin-bottom:15px}.inputBox input,.inputBox textarea{font-size:.9em;padding:8px}.inputBox input[type="submit"]{font-size:.9em;max-width:100%;padding:10px}.info{padding:15px}.info .infoBox div span{font-size:1.2em;min-width:30px;height:30px}.sci li a{font-size:1.5em}.doacao h1{font-size:1.2em}.doacao button{width:150px;height:30px;margin-top:20px}}@media (max-width:767px){.footer-col{max-width:100%;padding:0}.row-footer{flex-direction:column;align-items:center}.footer-col h4{margin-bottom:15px}.footer-col ul li a{font-size:14px}.footer-col .social-links{gap:8px}.footer-col .social-links a{height:35px;width:35px;line-height:35px}}@media (max-width:599px){#sobre h2{font-size:28px}.sobre p{font-size:14px;margin:20px 10px}.owl-carousel{min-height:200px}.owl-carousel .item img{width:90%}}@media (min-width:600px) and (max-width:999px){#sobre h2{font-size:32px}.sobre p{font-size:16px}.owl-carousel .item img{width:95%}}
+/* Responsividade para telas menores de 421px */
+@media (max-width: 421px) {
+    #contact {
+        padding: 20px;
+    }
+
+    .contact {
+        padding: 15px;
+    }
+
+    .box {
+        gap: 10px; /* Reduz o espaço entre os elementos */
+    }
+
+    .formBox .row50 {
+        flex-direction: column; /* Faz com que as colunas fiquem empilhadas */
+        gap: 10px;
+    }
+
+    .inputBox input,
+    .inputBox textarea {
+        font-size: 0.9em; /* Diminui o tamanho da fonte */
+        padding: 8px; /* Diminui o padding para ocupar melhor o espaço */
+    }
+
+    .inputBox input[type="submit"] {
+        font-size: 0.9em; /* Ajusta o tamanho do botão */
+        padding: 12px; /* Ajusta o padding do botão */
+    }
+
+    .info h3 {
+        font-size: 1.2em; /* Diminui o tamanho do título */
+    }
+
+    .info .infoBox div {
+        flex-direction: column; /* Coloca as informações em uma coluna */
+        gap: 5px;
+    }
+
+    .info .infoBox div span {
+        font-size: 1.2em; /* Diminui o ícone */
+        height: 30px; /* Ajusta o tamanho do ícone */
+        width: 30px; /* Ajusta o tamanho do ícone */
+    }
+
+    .info .infoBox div p,
+    .info .infoBox div a {
+        font-size: 0.9em; /* Ajusta o tamanho da fonte para as informações */
+    }
+
+    .sci li a {
+        font-size: 1.5em; /* Ajusta o tamanho dos ícones de redes sociais */
+    }
+
+    .doacao h1 {
+        font-size: 1.5em; /* Ajusta o tamanho do título da seção de doações */
+    }
+
+    .doacao button {
+        width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+        height: 45px; /* Ajusta o tamanho do botão */
+    }
+
+    .doacao button a {
+        font-size: 1em; /* Ajusta o tamanho do texto do botão */
+    }
+}
