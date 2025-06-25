@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,276 +43,612 @@
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="366">
     
-
+    <title>Gugu TalkShow - Conteúdo de Entretenimento</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <link rel="icon" href="Imagens/logoBranca.jpg">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Carrossel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-    <title>Gugu talkshow</title>
-    <link rel="icon" href="Imagens/logoBranca.jpg">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/responsividade.css">
-    <link rel="stylesheet" href="css/rodape.css">
-    <link rel="stylesheet" href="css/sobre.css">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S67CC1XVRN"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-S67CC1XVRN');
-    </script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styleNew.css">
 </head>
 <body>
-    <!--Api do Vlibras-->
+    <!-- VLibras Widget -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
-    <!--Fim da API-->
-    <!--Botão up-->
-    <div class="scroll-up-btn">
-        <ion-icon name="arrow-up-outline"></ion-icon>
-    </div>
-    <!--Fim Botão up-->
-
-    <header>
-        <nav class="navbar">
-            <div class="logo">Gugu talkshow</div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-list">
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="Imagens/logoBranca.jpg" alt="Gugu TalkShow Logo">
+                    Gugu TalkShow
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#social">Redes Sociais</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Sidebar Mobile -->
+        <div class="sidebar">
+            <ul class="sidebar-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a onclick="openModal()" href="#">Loja</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#social">Redes Sociais</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-        </nav>
+        </div>
+        
+        <div class="overlay"></div>
     </header>
-    <main>
-        <!-- Sobre Sessão -->
-        <section id="sobre" class="sobre">
-            <h2 class="text-center">Conheça <span class="text-secondary">um pouco sobre nós</span></h2>
-            <p class="text-center" style="margin: 20px 20px 70px 20px;">
-                A Gugu Talk Show foi lançada no dia 9 de agosto de 2023 por Gustavo Silva de Oliveira,
-                com o intuito de criar um espaço inovador e dinâmico para conversas e entretenimento. Desde o seu lançamento,
-                temos expandido nossa presença nas principais redes sociais, como Instagram e TikTok, trazendo conteúdo diversificado e de alta qualidade.
-            </p>
-            <div class="owl-carousel owl-theme">
-                <div class="item"><img src="Imagens/converted-image (2).webp" alt="Imagem Principal"></div>
-                <div class="item"><img src="Imagens/Dupla.jpg" alt="Dupla" ></div>
-                <div class="item"><img src="Imagens/Trazeira.jpg" alt="Imagem Traseira" ></div>
-                <div class="item"><img src="Imagens/converted-image (3).webp" alt="Imagem Frontal 2" loading="lazy"></div>
-                <div class="item"><img src="Imagens/Fofos.jpg" alt="Imagem Fofa" loading="lazy"></div>
-                <div class="item"><img src="Imagens/Frontal (1).webp" alt="Imagem Frontal" loading="lazy"></div>
-            </div>
-        </section>
-
-        <div id="modal" class="modal">
-            <div class="modal-content">
-              <div class="icon">
-                <i class="fas fa-clock"></i>
-              </div>
-              <p>Esta funcionalidade ainda não está disponível, em breve mais informações.</p>
-              <button onclick="closeModal()" class="close-btn">Fechar</button>
-            </div>
-          </div>
-
-        <!--Sessão de blog-->
-		<section id="blog" class="blog py-3">
-			<div class="wrapper">
-				<div class="header">
-					<span></span>
-					<h4>Nossas redes </h4>
-				</div>
-				<div class="blog-info">
-					<h2>Veja alguns de <span class="text-secondary">nossos post's</span></h2>
-					<a href="https://www.instagram.com/gugu.talk.show/">Ver todos</a>
-				</div>
-				<div class="blog-card">
-					<div class="card">
-						<div class="card-header">
-							<a href="https://www.tiktok.com/@gugu.talk.show"><img src="Imagens/Fofos.jpg" alt="imagem de duas pessoas" ></a>
-						</div>
-						<div class="card-body">
-							<span Class="tag tag-orange">tiktok</span>
-							<h4>Veja todo o conteudo do <br> nosso Tik Tok</h4>
-							<div class="footer">
-								<Small>09 de agosto, 2024 / 20 comentarios</Small>
-								<a href="https://www.tiktok.com/@gugu.talk.show"><i class="bx bx-right-arrow-alt bx-sm"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header">
-							<a href="https://www.instagram.com/gugu.talk.show/"><img src="Imagens/vista.png" alt="vista de um parque" ></a>
-						</div>
-						<div class="card-body">
-							<span Class="tag tag-purple">Instagram</span>
-							<h4>Veja todo o conteudo do <br> nosso Instagram</h4>
-							<div class="footer">
-								<Small>09 de agosto, 2024 / 5 comentarios</Small>
-								<a href="https://www.instagram.com/gugu.talk.show/"><i class="bx bx-right-arrow-alt bx-sm"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header">
-							<a href="https://www.tiktok.com/@gugu.talk.show"><img src="Imagens/parceiros.png" alt="grupo gugutalkshow" ></a>
-						</div>
-						<div class="card-body">
-							<span Class="tag tag-red">Youtube</span>
-							<h4>Agora presentes no Youtube!<br> Mais novidades em breve </h4>
-							<div class="footer">
-								<Small>13 de agosto, 2024 / 40 comentarios</Small>
-								<a href="https://www.youtube.com/@gts_brasil"><i class="bx bx-right-arrow-alt bx-sm"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-        <!--Sessão de contato-->
-		<section id="contact" class= "contact">
-            <div class="box">
-                <div class="contact form">
-                    <h3 style="text-align: center; margin-bottom: 30px;">Envie uma mensagem</h3>
-                    <form  action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="ca78178e-6d77-4544-8655-c0dfc8e80564">
-
-
-                        <div class="formBox">
-                            <div class="row50">
-                                <div class="inputBox">
-                                    <span>Nome</span>
-                                    <input type="text" name="name" placeholder="Seu nome" required>
-                                </div>
-                            </div>
     
-                            <div class="row50">
-                                <div class="inputBox">
-                                    <span>Email </span>
-                                    <input type="email" name="email" placeholder="Digite aqui" required>
-                                </div>
-                            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Conteúdo Inovador e Dinâmico</h1>
+            <p>Desde o nosso lançamento, expandimos nossa presença nas principais redes sociais, trazendo conteúdo diversificado e de alta qualidade para você!</p>
+            <div class="hero-buttons">
+                <a href="#social" class="btn btn-outline">Nossas Redes</a>
+                <a href="#about" class="btn btn-primary">Conheça Mais</a>
+            </div>
+        </div>
+    </section>
     
-                            <div class="row100">
-                                <div class="inputBox">
-                                    <span>Mensagem </span>
-                                    <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
-                                </div>
-                            </div>
-                            <div class="row100">
-                                <div class="inputBox">
-                                    <input type="submit" value="Enviar">
-                                </div>
-                            </div>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Sobre Nós</h2>
+                <p>A Gugu Talk Show foi lançada no dia 9 de agosto de 2023 com o intuito de criar um espaço inovador para conversas e entretenimento.</p>
+            </div>
+            
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-text">
+                    <h3>Nossa História</h3>
+                    <p>Fundada por Gustavo Silva de Oliveira, a Gugu TalkShow começou como um pequeno projeto e rapidamente cresceu para se tornar uma referência em conteúdo de entretenimento digital.</p>
+                    <p>Nosso objetivo é proporcionar momentos de diversão, reflexão e entretenimento de qualidade para nosso público em todas as plataformas digitais.</p>
+                    <p>Acreditamos no poder da comunicação autêntica e na criação de conexões reais com nossa comunidade.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-number" data-count="10000">0</div>
+                            <div class="stat-text">Seguidores</div>
                         </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-number" data-count="500">0</div>
+                            <div class="stat-text">Conteúdos</div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-text">Plataformas</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left" data-aos-delay="400">
+                    <img src="Imagens/converted-image (2).webp" alt="Equipe Gugu TalkShow" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Nossa Galeria</h2>
+                <p>Alguns momentos especiais capturados em nossos eventos e produções de conteúdo.</p>
+            </div>
+            
+            <div class="gallery-carousel owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item">
+                    <img src="Imagens/Dupla.jpg" alt="Evento Gugu TalkShow" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Imagens/Trazeira.jpg" alt="Produção de conteúdo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Imagens/converted-image (3).webp" alt="Equipe em ação" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Imagens/Fofos.jpg" alt="Momento descontraído" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Imagens/Frontal (1).webp" alt="Interação com o público" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Section -->
+    <section id="social" class="section social">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Nossas Redes Sociais</h2>
+                <p>Siga-nos em nossas redes sociais e acompanhe todo o conteúdo que produzimos!</p>
+            </div>
+            
+            <div class="social-cards">
+                <div class="social-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <a href="https://www.tiktok.com/@gugu.talk.show" target="_blank" rel="noopener noreferrer">
+                            <img src="Imagens/Fofos.jpg" alt="Conteúdo TikTok" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-tiktok">TikTok</span>
+                        <h4>Conteúdo Dinâmico e Divertido</h4>
+                        <p>Vídeos curtos e engajadores que vão te fazer rir e refletir.</p>
+                        <div class="card-footer">
+                            <small>+10k seguidores</small>
+                            <a href="https://www.tiktok.com/@gugu.talk.show" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <a href="https://www.instagram.com/gugu.talk.show/" target="_blank" rel="noopener noreferrer">
+                            <img src="Imagens/vista.png" alt="Conteúdo Instagram" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-instagram">Instagram</span>
+                        <h4>Fotos e Stories Exclusivos</h4>
+                        <p>Behind the scenes e momentos especiais do nosso dia a dia.</p>
+                        <div class="card-footer">
+                            <small>+5k seguidores</small>
+                            <a href="https://www.instagram.com/gugu.talk.show/" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header">
+                        <a href="https://www.youtube.com/@gts_brasil" target="_blank" rel="noopener noreferrer">
+                            <img src="Imagens/parceiros.png" alt="Conteúdo YouTube" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-youtube">YouTube</span>
+                        <h4>Vídeos Exclusivos e TalkShows</h4>
+                        <p>Conteúdo aprofundado e discussões interessantes.</p>
+                        <div class="card-footer">
+                            <small>Novo canal</small>
+                            <a href="https://www.youtube.com/@gts_brasil" target="_blank" rel="noopener noreferrer">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Entre em Contato</h2>
+                <p>Tem alguma dúvida, sugestão ou quer trabalhar conosco? Envie uma mensagem!</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form" data-aos="fade-right">
+                    <h3>Envie uma mensagem</h3>
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="ca78178e-6d77-4544-8655-c0dfc8e80564">
+                        <input type="hidden" name="redirect" value="https://gugutalkshow.vercel.app/thank-you.html">
+                        
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
                     </form>
                 </div>
                 
-        
-            <div class="contact info">
-                <h3 class="h3_destaque">Informações de contato</h3>
-                <div class="infoBox">
-                    <div>
-                        <span><ion-icon name="time-outline"></ion-icon></span>
-                        <p>09 de Agosto de 2023</p>
+                <div class="contact-info" data-aos="fade-left">
+                    <h3>Informações</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="info-content">
+                            <h4>Desde</h4>
+                            <p>09 de Agosto de 2023</p>
+                        </div>
                     </div>
-                    <div>
-                        <span><ion-icon name="mail"></ion-icon></span>
-                        <a href="mailto:silvadeoliveira.gustavo35@gmail.com">silvadeoliveira.gustavo35@gmail.com</a>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:silvadeoliveira.gustavo35@gmail.com">silvadeoliveira.gustavo35@gmail.com</a>
+                        </div>
                     </div>
-                    <div>
-                        <span><ion-icon name="call"></ion-icon></span>
-                        <a href="tel:+55 11 986261007">+55 11 99983-2007</a>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info-content">
+                            <h4>Telefone</h4>
+                            <a href="tel:+5511999832007">(11) 99983-2007</a>
+                        </div>
                     </div>
-        
-                    <!-- Redes Sociais aqui -->
-                    <ul class="sci">
-                        <li><a href="https://www.tiktok.com/@gugu.talk.show"><ion-icon name="logo-tiktok"></ion-icon></a></li>
-                        <li><a href="https://www.youtube.com/@gts_brasil"><ion-icon name="logo-youtube"></ion-icon></ion-icon></a></li>
-                        <li><a href="https://wa.me/5511999832007?text=Fale%20conosco"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                        <li><a href="https://www.instagram.com/gugu.talk.show/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="doacao">
-                <h1>Nos ajude a crescer!</h1>
-                <p>Faça parte da construção dessa incrivel marca que tem proporcionado entreterimento à tantas pessoas. <br><br> Nos incentive!</p>
-                <button>
-                    <a href="https://link.mercadopago.com.br/deckcs">Faça uma doação</a>
-				</button>
-            </div>
-        </section>  
-
-    </main>
-    
-    <!--Rodapé aqui-->
-    <footer class="footer-bottom py-3 text-center">
-        <div class="container-footer">
-            <div class="row-footer">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#portfolio">Sobre nós</a></li>
-                        <li><a href="#Blog">Conheça nosso blog</a></li>
-                        <li><a href="#contact">Fale conosco</a></li>
-                        <li><a href="documentos/gugutalkshow - documento.pdf">Leia a documentação</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Nos ajude</h4>
-                    <ul>
-                        <li><a href="https://www.instagram.com/gugu.talk.show/">Nos siga</a></li>
-                        <li><a href="#contact">Feedback's</a></li>
-                        <li><a href="https://link.mercadopago.com.br/deckcs">faça uma doação</a></li>
-                        <li><a href="https://wa.me/5511999832007?text=Trabalhe%20conosco">Trabalhe conosco</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
+                    
                     <div class="social-links">
-                        <a href="https://www.tiktok.com/@gugu.talk.show"><ion-icon name="logo-tiktok"></ion-icon></a>
-                        <a href="https://www.youtube.com/@gts_brasil"><ion-icon name="logo-youtube"></ion-icon></ion-icon></a>
-                        <a href="https://wa.me/5511999832007?text=Fale%20conosco"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                        <a href="https://www.instagram.com/gugu.talk.show/"><ion-icon name="logo-instagram"></ion-icon></a>
-                    </div>                        
+                        <a href="https://www.tiktok.com/@gugu.talk.show" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@gts_brasil" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/5511999832007?text=Olá,%20Gugu%20TalkShow!" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/gugu.talk.show/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-        <p class="copy">&copy; <span id="ano"></span>  Gugu Talkshow <br>Todos os direitos reservados.<br><br><br>Desenvolvido por <a class="marketing" href="https://github.com/Derickcsantos/Derickcsantos">Derick Campos Santos</a></p>
+    </section>
+    
+    <!-- Donation Section -->
+    <section id="donation" class="section donation">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Nos Ajude a Crescer!</h2>
+                <p>Faça parte da construção dessa incrível marca que tem proporcionado entretenimento à tantas pessoas.</p>
+            </div>
+            
+            <div class="donation-box" data-aos="fade-up" data-aos-delay="200">
+                <h3>Incentive Nossa Empresa</h3>
+                <p>Sua contribuição nos ajuda a produzir conteúdo de maior qualidade e alcançar mais pessoas com nosso trabalho.</p>
+                
+                <a href="https://link.mercadopago.com.br/deckcs" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Faça uma Doação</a>
+                
+                <div class="donation-methods">
+                    <div class="method" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fab fa-pix"></i>
+                        <h4>PIX</h4>
+                        <small>Chave: gugutalkshow@gmail.com</small>
+                    </div>
+                    <div class="method" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-credit-card"></i>
+                        <h4>Mercado Pago</h4>
+                        <small>Link acima</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Sobre Nós</h4>
+                    <p>A Gugu TalkShow produz conteúdo inovador e dinâmico com muito entretenimento desde 2023.</p>
+                    <div class="footer-social">
+                        <a href="https://www.tiktok.com/@gugu.talk.show" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@gts_brasil" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/5511999832007?text=Olá,%20Gugu%20TalkShow!" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/gugu.talk.show/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#social">Redes Sociais</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Contato</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:silvadeoliveira.gustavo35@gmail.com">silvadeoliveira.gustavo35@gmail.com</a></li>
+                        <li><a href="tel:+5511999832007">(11) 99983-2007</a></li>
+                        <li><a href="https://wa.me/5511999832007?text=Olá,%20Gugu%20TalkShow!" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright" data-aos="fade-up" data-aos-delay="400">
+                <p>&copy; <span id="current-year"></span> Gugu TalkShow. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://github.com/Derickcsantos" target="_blank" rel="noopener noreferrer">Derick Campos Santos</a></p>
+            </div>
+        </div>
     </footer>
-    <!--Fim do rodapé aqui-->
-
-    <script src="js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5511999832007?text=Olá,%20Gugu%20TalkShow!" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Scroll Up Button -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal" id="newsletterModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h3>Assine Nossa Newsletter</h3>
+            <p>Receba as últimas novidades e conteúdos exclusivos diretamente no seu e-mail.</p>
+            <form id="newsletterForm">
+                <div class="form-group">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                </div>
+                <button type="submit" class="submit-btn">Assinar</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script defer>
-        const anoAtual = new Date().getFullYear();
-        document.getElementById('ano').textContent =  anoAtual;
-    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    
     <script>
-         new window.VLibras.Widget('https://vlibras.gov.br/app');
+        // Inicializações quando o DOM estiver pronto
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializa AOS (Animate On Scroll)
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            // Inicializa VLibras
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+            
+            // Inicializa o carrossel
+            $('.gallery-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+            
+            // Atualiza o ano no footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Contador animado para estatísticas
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            function animateCounters() {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+                    
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(animateCounters, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                });
+            }
+            
+            // Observador para disparar a animação quando o elemento estiver visível
+            const statsSection = document.querySelector('.stats');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            observer.observe(statsSection);
+            
+            // Menu mobile
+            const menuToggle = document.querySelector('.menu-toggle');
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.overlay');
+            
+            menuToggle.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+                overlay.classList.toggle('active');
+                document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+            });
+            
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            
+            // Fecha o menu ao clicar em um link
+            const sidebarLinks = document.querySelectorAll('.sidebar-links a');
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    sidebar.classList.remove('active');
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+            
+            // Scroll suave para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Botão de scroll up
+            const scrollUpBtn = document.querySelector('.scroll-up-btn');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollUpBtn.classList.add('active');
+                } else {
+                    scrollUpBtn.classList.remove('active');
+                }
+            });
+            
+            scrollUpBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Header scroll effect
+            const header = document.querySelector('.header');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Modal de newsletter
+            const newsletterModal = document.getElementById('newsletterModal');
+            const modalClose = document.querySelector('.modal-close');
+            const newsletterForm = document.getElementById('newsletterForm');
+            
+            // Mostra o modal após 5 segundos
+            setTimeout(() => {
+                if (!localStorage.getItem('newsletterShown')) {
+                    newsletterModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            }, 5000);
+            
+            // Fecha o modal
+            modalClose.addEventListener('click', () => {
+                newsletterModal.classList.remove('active');
+                document.body.style.overflow = '';
+                localStorage.setItem('newsletterShown', 'true');
+            });
+            
+            // Submissão do formulário de newsletter
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = newsletterForm.querySelector('input[type="email"]').value;
+                
+                // Aqui você pode adicionar o código para enviar o e-mail para sua API
+                console.log('E-mail cadastrado:', email);
+                
+                // Fecha o modal após o envio
+                newsletterModal.classList.remove('active');
+                document.body.style.overflow = '';
+                localStorage.setItem('newsletterShown', 'true');
+                
+                // Mostra mensagem de sucesso
+                alert('Obrigado por assinar nossa newsletter!');
+            });
+            
+            // Formulário de contato
+            const contactForm = document.getElementById('contactForm');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                
+                fetch(this.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Mensagem enviada com sucesso!');
+                        contactForm.reset();
+                    } else {
+                        throw new Error('Erro ao enviar mensagem');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
+                });
+            });
+        });
     </script>
 </body>
 </html>
